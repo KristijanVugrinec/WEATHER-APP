@@ -1,0 +1,221 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url(./backgrounds/clearsky.png);
+
+}
+
+@media only screen and (max-width: 768px) {
+   .main {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+   }
+   .app {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 !important;
+   }
+
+   .appName{
+    display: flex;
+    justify-content: center;
+   }
+
+   .appsecond {
+    margin-top: 2rem !important;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .icon{
+    margin-bottom: 10px;
+   }
+
+   .iconandname {
+    width: 100% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid white;
+   }
+
+   .specsMain {
+    width: 100% !important;
+    margin-top: 10%;
+   }
+
+   .cityanddate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  }
+
+p {
+    margin: 0;
+}
+
+.app{
+    width: 1000px;
+    height: 500px;
+    backdrop-filter:blur(4px);
+    background: linear-gradient(205deg, rgba(242,242,242,1) 0%, rgba(66,66,73,0.529832001159839) 40%, rgba(0,0,0,1) 100%);
+    border-radius: 20px;
+}
+
+.appName {
+    margin-left: 0.4rem;
+    font-weight: bold;
+}
+
+.clear {
+background-image: url('./backgrounds/clearsky.png');
+background-size: cover;
+}
+
+.clouds{
+    background-image: url('./backgrounds/cloudy.png');
+    background-size: cover;
+}
+
+.rain{
+    background-image: url('./backgrounds/rainy.png');
+    background-size: cover;
+}
+
+.storm{
+    background-image: url('./backgrounds/thunderstorm.png');
+    background-size: cover;
+}
+
+.snow {
+    background-image: url('./backgrounds/snow.png');
+    background-size: cover;
+}
+
+.buttonApp {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height:20px ;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: none;
+}
+
+.searchButton {
+    width: 16px;
+}
+
+.fog {
+    background-image: url('./backgrounds/fog.png');
+    background-size: cover;
+}
+.input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 50%;
+    border: none;
+    height: 20px;
+    border-radius: 20px;
+    background: white;
+    color: black;
+}
+
+.appsecond {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7rem;
+}
+
+.names {
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.iconandname {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 400px;
+    border-right: 1px solid rgba(255, 255, 255, 0.493);
+}
+
+.cityanddate > p:first-child {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.cityanddate > p:nth-child(2){
+    font-weight: 500;
+}
+
+.iconsandcondition {
+    display: flex;
+}
+
+.temperatureAndCondition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.temperatureAndCondition > div {
+    font-weight: 500;
+}
+
+.temperatureAndCondition > p {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.icon {
+    width: 200px;
+}
+
+.specsMain {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 400px;
+}
+
+.specs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 50px;
+}
+
+.specs > p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.specs > p:nth-child(2){
+    font-weight: 500;
+}
