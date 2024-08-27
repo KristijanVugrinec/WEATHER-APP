@@ -46,7 +46,7 @@ function WeatherApp () {
         setSavedCity(cityRef.current)
         console.log("Spremljeni grad:", cityRef.current)
 
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityRef.current},&APPID=${apiKey}`)
+      axios.get(`/.netlify/functins/weatherApp?city=${cityRef.current}`)
           .then((response) => {
             setData(response.data);
             console.log("Podaci",response.data)
